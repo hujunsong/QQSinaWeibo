@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff4f4f4" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff4f4f4"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_bg"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/black"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffc0c0c0"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip" >
+
+                <AutoCompleteTextView
+                    android:id="@id/AutoCompleteTextView01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/search_edittext_bg"
+                    android:completionThreshold="1"
+                    android:singleLine="true" />
+
+                <Button
+                    android:id="@id/btSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/search_button_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@id/main_radio"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@id/rbSearchWeibo"
+                        style="@style/search_radiobutton_weibo"
+                        android:drawableLeft="@drawable/search_radio_1"
+                        android:tag="radio_button0"
+                        android:text="@string/search_weibo"
+                        android:textSize="17.0sp" />
+
+                    <RadioButton
+                        android:id="@id/rbSearchUser"
+                        style="@style/search_radiobutton_user"
+                        android:drawableLeft="@drawable/search_radio_2"
+                        android:tag="radio_button1"
+                        android:text="@string/search_user"
+                        android:textSize="17.0sp" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20.0dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingLeft="10.0dip"
+                android:paddingTop="10.0dip"
+                android:text="@string/searchsquare"
+                android:textColor="#ff535353"
+                android:textSize="17.0sp" />
+
+            <ImageView
+                android:id="@id/ImageView01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="fill_parent"
+                android:layout_height="210.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="#fff4f4f4"
+                android:cacheColorHint="#fff4f4f4"
+                android:divider="@drawable/circle_list_divider"
+                android:dividerHeight="0.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

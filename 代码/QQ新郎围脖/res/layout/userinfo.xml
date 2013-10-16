@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff4f4f4"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/title"
+            layout="@layout/title_two_button" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20.0dip" >
+
+                <ImageView
+                    android:id="@id/ivItemPortrait"
+                    android:layout_width="60.0sp"
+                    android:layout_height="60.0sp"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:src="@drawable/portrait"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@id/tvItemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/ivItemPortrait"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_toRightOf="@id/ivItemPortrait"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:singleLine="true"
+                    android:textColor="#ff222222"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@id/ivItemGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tvItemName"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_toRightOf="@id/tvItemName"
+                    android:src="@drawable/icon_male"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@id/tvItemProvince"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvItemName"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_toRightOf="@id/ivItemPortrait"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:singleLine="true"
+                    android:textColor="#ff222222"
+                    android:textSize="14.0sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@id/tvItemAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/ivItemPortrait"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_toRightOf="@id/ivItemPortrait"
+                    android:autoLink="web"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:singleLine="true"
+                    android:textColor="#ff222222"
+                    android:textColorLink="#ff0072bc"
+                    android:textSize="14.0sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@id/tvItemContent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivItemPortrait"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:autoLink="web"
+                    android:background="@drawable/profile_description_bg"
+                    android:padding="10.0dip"
+                    android:textColor="#ff222222"
+                    android:textColorLink="#ff0072bc"
+                    android:textSize="14.0sp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@id/usrinfo_btns_grp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip" >
+
+                <Button
+                    android:id="@id/btn_atten"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:text="@string/attend_to_him"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@id/btn_message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:text="@string/sendMsg"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@id/btn_at"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:text="@string/at_him"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/weibo"
+                    android:textColor="#ff666666"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@id/tvItemBlogNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:textColor="#ff999999"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/attention"
+                    android:textColor="#ff666666"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@id/tvItemMeAttNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:textColor="#ff999999"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/fans"
+                    android:textColor="#ff666666"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@id/tvItemAttMeNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:textColor="#ff999999"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/usrinfo_detail_block"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/usrinfo_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10.0dip"
+                android:visibility="invisible" >
+
+                <include
+                    android:id="@id/first_btn_group"
+                    layout="@layout/profile_btn_group_s" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="3.0dip"
+                    android:background="@drawable/shui_ping_divider_wrap" />
+
+                <include
+                    android:id="@id/second_btn_group"
+                    layout="@layout/profile_btn_group" />
+
+                <View
+                    android:id="@id/vHaveFav"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3.0dip"
+                    android:background="@drawable/shui_ping_divider_wrap" />
+
+                <include
+                    android:id="@id/third_btn_group"
+                    layout="@layout/profile_btn_group" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

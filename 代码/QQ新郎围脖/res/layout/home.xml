@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/freelook_title"
+        layout="@layout/title_two_button" />
+
+    <include
+        android:id="@+id/progress"
+        layout="@layout/progress" />
+
+    <ListView
+        android:id="@+id/freelook_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@drawable/divider_horizontal_timeline"
+        android:dividerHeight="1.0dip" />
+
+</LinearLayout>

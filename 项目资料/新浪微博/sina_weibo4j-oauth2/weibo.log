@@ -1,0 +1,55 @@
+0    INFO  [2013-10-05 14:11:37]  code: 
+73   DEBUG [2013-10-05 14:11:37]  Request:
+73   DEBUG [2013-10-05 14:11:37]  POSThttps://api.weibo.com/oauth2/access_token
+3780 DEBUG [2013-10-05 14:11:40]  Response:
+3780 DEBUG [2013-10-05 14:11:40]  https StatusCode:400
+3781 DEBUG [2013-10-05 14:11:40]  Server:nginx/1.2.0
+3781 DEBUG [2013-10-05 14:11:40]  Date:Sat, 05 Oct 2013 06:11:49 GMT
+3781 DEBUG [2013-10-05 14:11:40]  Content-Length:162
+3781 DEBUG [2013-10-05 14:11:40]  Connection:keep-alive
+3781 DEBUG [2013-10-05 14:11:40]  Pragma:No-cache
+3781 DEBUG [2013-10-05 14:11:40]  Cache-Control:no-cache
+3781 DEBUG [2013-10-05 14:11:40]  Expires:Thu, 01 Jan 1970 00:00:00 GMT
+3781 DEBUG [2013-10-05 14:11:40]  Api-Server-IP:10.75.2.82
+3781 DEBUG [2013-10-05 14:11:40]  X-Varnish:3852101895
+3781 DEBUG [2013-10-05 14:11:40]  Age:0
+3781 DEBUG [2013-10-05 14:11:40]  Via:1.1 varnish
+3785 DEBUG [2013-10-05 14:11:40]  {"error":"invalid_grant","error_code":21325,"request":"/oauth2/access_token","error_uri":"/oauth2/access_token","error_description":"invalid authorization code:"}
+
+0    DEBUG [2013-10-05 14:16:43]  Request:
+1    DEBUG [2013-10-05 14:16:43]  POSThttps://api.weibo.com/oauth2/access_token
+551  DEBUG [2013-10-05 14:16:44]  Response:
+551  DEBUG [2013-10-05 14:16:44]  https StatusCode:200
+551  DEBUG [2013-10-05 14:16:44]  Server:nginx/1.2.0
+551  DEBUG [2013-10-05 14:16:44]  Date:Sat, 05 Oct 2013 06:16:52 GMT
+551  DEBUG [2013-10-05 14:16:44]  Content-Type:text/plain;charset=UTF-8
+552  DEBUG [2013-10-05 14:16:44]  Content-Length:117
+552  DEBUG [2013-10-05 14:16:44]  Connection:keep-alive
+552  DEBUG [2013-10-05 14:16:44]  Pragma:No-cache
+552  DEBUG [2013-10-05 14:16:44]  Cache-Control:no-cache
+552  DEBUG [2013-10-05 14:16:44]  Expires:Thu, 01 Jan 1970 00:00:00 GMT
+552  DEBUG [2013-10-05 14:16:44]  Api-Server-IP:10.73.89.47
+552  DEBUG [2013-10-05 14:16:44]  X-Varnish:3853324208
+552  DEBUG [2013-10-05 14:16:44]  Age:0
+553  DEBUG [2013-10-05 14:16:44]  Via:1.1 varnish
+556  DEBUG [2013-10-05 14:16:44]  {"access_token":"2.006R5mzD68vy_C0c8d0b15a2zwJqUE","remind_in":"157679999","expires_in":157679999,"uid":"3661288071"}
+
+0    DEBUG [2013-10-05 14:18:30]  Request:
+2    DEBUG [2013-10-05 14:18:30]  POSThttps://api.weibo.com/2/statuses/update.json
+71   DEBUG [2013-10-05 14:18:31]  Authorization: OAuth2 2.006R5mzD68vy_C0c8d0b15a2zwJqUE
+71   DEBUG [2013-10-05 14:18:31]  API-RemoteIP: 192.168.1.102
+702  DEBUG [2013-10-05 14:18:31]  Response:
+702  DEBUG [2013-10-05 14:18:31]  https StatusCode:200
+702  DEBUG [2013-10-05 14:18:31]  Server:nginx/1.2.0
+702  DEBUG [2013-10-05 14:18:31]  Date:Sat, 05 Oct 2013 06:18:40 GMT
+702  DEBUG [2013-10-05 14:18:31]  Content-Type:application/json;charset=UTF-8
+702  DEBUG [2013-10-05 14:18:31]  Content-Length:1340
+703  DEBUG [2013-10-05 14:18:31]  Connection:keep-alive
+703  DEBUG [2013-10-05 14:18:31]  Api-Server-IP:10.75.5.60
+703  DEBUG [2013-10-05 14:18:31]  Vary:Accept-Encoding
+703  DEBUG [2013-10-05 14:18:31]  X-Varnish:678457325
+704  DEBUG [2013-10-05 14:18:31]  Age:0
+704  DEBUG [2013-10-05 14:18:31]  Via:1.1 varnish
+708  DEBUG [2013-10-05 14:18:31]  {"created_at":"Sat Oct 05 14:18:40 +0800 2013","id":3630046202061191,"mid":"3630046202061191","idstr":"3630046202061191","text":"javacode发第一条微薄","source":"<a href=\"http://open.weibo.com\" rel=\"nofollow\">未通过审核应用</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[],"geo":null,"user":{"id":3661288071,"idstr":"3661288071","class":1,"screen_name":"灬我就喜欢灬","name":"灬我就喜欢灬","province":"44","city":"3","location":"广东 深圳","description":"","url":"","profile_image_url":"http://tp4.sinaimg.cn/3661288071/50/0/1","profile_url":"u/3661288071","domain":"","weihao":"","gender":"m","followers_count":0,"friends_count":40,"statuses_count":0,"favourites_count":0,"created_at":"Sat Oct 05 00:18:15 +0800 2013","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","ptype":0,"allow_all_comment":true,"avatar_large":"http://tp4.sinaimg.cn/3661288071/180/0/1","avatar_hd":"http://tp4.sinaimg.cn/3661288071/180/0/1","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":0,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0},"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}}
+
+728  INFO  [2013-10-05 14:18:31]  Status [user=User [id=3661288071, screenName=灬我就喜欢灬, name=灬我就喜欢灬, province=44, city=3, location=广东 深圳, description=, url=, profileImageUrl=http://tp4.sinaimg.cn/3661288071/50/0/1, userDomain=, gender=m, followersCount=0, friendsCount=40, statusesCount=0, favouritesCount=0, createdAt=Sat Oct 05 00:18:15 CST 2013, following=false, verified=false, verifiedType=-1, allowAllActMsg=false, allowAllComment=true, followMe=false, avatarLarge=http://tp4.sinaimg.cn/3661288071/180/0/1, onlineStatus=0, status=null, biFollowersCount=0, remark=null, lang=zh-cn, verifiedReason=, weihao=, statusId=], idstr=3630046202061191, createdAt=Sat Oct 05 14:18:40 CST 2013, id=3630046202061191, text=javacode发第一条微薄, source=Source [url=http://open.weibo.com, relationShip=nofollow, name=未通过审核应用], favorited=false, truncated=false, inReplyToStatusId=-1, inReplyToUserId=-1, inReplyToScreenName=, thumbnailPic=, bmiddlePic=, originalPic=, retweetedStatus=null, geo=null, latitude=-1.0, longitude=-1.0, repostsCount=0, commentsCount=0, mid=3630046202061191, annotations=, mlevel=0, visible=Visible [type=0, list_id=0]]

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg"
+    android:orientation="horizontal"
+    android:tag="itemview" >
+
+    <!-- 头像 -->
+
+    <ImageView
+        android:id="@id/ivItemPortrait"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:contentDescription="@string/portrait"
+        android:saveEnabled="true"
+        android:src="@drawable/portrait" />
+
+    <LinearLayout
+        android:id="@id/lyRightLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5.0dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3.0dip"
+            android:orientation="horizontal" >
+
+            <!-- 昵称 -->
+
+            <TextView
+                android:id="@id/tvItemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵昵称昵称昵称称"
+                android:textColor="#ff333333"
+                android:textSize="15.0sp" />
+            <!-- 新浪认证 -->
+
+            <ImageView
+                android:id="@id/ivItemV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:saveEnabled="false"
+                android:src="@drawable/v"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3.0dip"
+                android:layout_weight="1.0"
+                android:gravity="right" >
+
+                <!-- 时间 -->
+
+                <TextView
+                    android:id="@id/tvItemDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="3.0dip"
+                    android:text="时间时间时间"
+                    android:textColor="#ff666666"
+                    android:textSize="12.0sp" />
+                <!-- 时间图片 -->
+
+                <ImageView
+                    android:id="@id/ivItemPic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tvItemDate"
+                    android:layout_marginTop="3.0dip"
+                    android:layout_toLeftOf="@id/tvItemDate"
+                    android:saveEnabled="false"
+                    android:src="@drawable/pic"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- 内容 -->
+
+        <TextView
+            android:id="@id/tvItemContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="内内容内容内容内容内容容"
+            android:textColor="#ff414951"
+            android:textSize="15.0sp" />
+        <!-- 自己增加的 主要用于显示内容的图片 -->
+
+        <ImageView
+            android:id="@+id/contentPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@id/subLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4.0dip"
+            android:background="@drawable/popup"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <!--
+            回复 
+
+            <TextView
+                android:id="@id/tvItemSubContent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3.0dip"
+                android:layout_marginTop="3.0dip"
+                android:text="回回复回复回复回复回复复"
+                android:textColor="#ff666666"
+                android:textSize="14.0sp" />
+             自己增加的 主要用于显示回复内容的图片
+            -->
+
+            <ListView
+                android:id="@+id/comment_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/subContentPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

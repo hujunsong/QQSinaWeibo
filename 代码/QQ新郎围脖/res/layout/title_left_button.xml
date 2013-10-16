@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/search_bg"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="25dip" >
+    </TextView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="49dip"
+        android:layout_height="36dip"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/title_button"
+        android:textColor="@color/white" >
+    </Button>
+
+</FrameLayout>
